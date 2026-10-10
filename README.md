@@ -21,7 +21,11 @@ This repository contains my activities, exercises, and projects for the **Linear
 
 This repository is created to practice and apply linear algebra concepts using Python, with a focus on their applications in Artificial Intelligence.
 
-## 👨‍💻 Author
+## 👨‍💻 Meet the Team ✨. ݁₊
 
-**Shine Carro**  
-BS Computer Science Student
+Arago, Mary Jobine
+Banayado, Denver
+Carro, John Kristian Shine
+Gabaldon, Lance Gencedric
+Palacol, Jana Beatrice
+Quito, James Andrey
