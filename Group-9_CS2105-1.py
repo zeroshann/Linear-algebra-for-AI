@@ -6,11 +6,12 @@ from numpy.linalg import solve, inv
 np.set_printoptions(precision=4, suppress=True)
 
 data = {
-    "GPA": [1.25, 1.50, 2.75, 2.00, 1.30],
-    "Exam": [95, 90, 70, 80, 96],
-    "Income": [25000, 28000, 90000, 60000, 20000],
-    "Leadership": [8, 9, 4, 6, 10],
-    "Scholarship": ["Yes", "Yes", "No", "No", "Yes"]
+    "Name": ["Carro, John Kristian Shine", "Arago, Mary Jobine","Palacol, Jana Beatrice","Quito, James Andrey", "Banayado, Denver", "Gabaldon, Lance Gencedric"],
+    "GPA": [1.25, 1.25, 1.25, 1.25, 1.25, 1.25],
+    "Exam": [56, 52, 44, 38, 41, 12],
+    "Income": [30000, 70000, 50000, 20000, 20000, 60000],
+    "Leadership": [8, 9, 7, 9, 3, 4],
+    "Scholarship": ["Yes", "Yes", "No", "No", "Yes", "No"]
 }
 
 df = pd.DataFrame(data)
@@ -19,11 +20,12 @@ print("SCHOLARSHIP APPLICANT RECORDS")
 print(df)
 
 A = np.array([
-    [1.25, 95, 25000, 8],
-    [1.50, 90, 28000, 9],
-    [2.75, 70, 90000, 4],
-    [2.00, 80, 60000, 6],
-    [1.30, 96, 20000, 10]
+    [1.25, 56, 30000, 8],
+    [1.25, 52, 70000, 9],
+    [1.25, 44, 50000, 7],
+    [1.25, 38, 20000, 9],
+    [1.25, 41, 20000, 3],
+    [1.25, 12, 60000, 4]
 ], dtype=float)
 
 print("A = Matrix A")
@@ -95,7 +97,7 @@ Lance = pd.DataFrame ({
     "Leadership": [4]
 })
 
-print("\nCarro, John Kristian Shine")
+print("\n Name: Carro, John Kristian Shine")
 
 new_student = np.array([1.25,56,30000,8])
 prediction = new_student @ weights
@@ -109,7 +111,7 @@ if prediction >= 0.5:
 else:
     print("Scholarship Awarded: NO")
     
-print("\nArago, Mary Jobine")
+print("\n Name: Arago, Mary Jobine")
 
 new_student = np.array([1.25,52,70000,9])
 prediction = new_student @ weights
@@ -123,7 +125,7 @@ if prediction >= 0.5:
 else:
     print("Scholarship Awarded: NO")
     
-print("\nPalacol, Jana Beatrice")
+print("\n Name: Palacol, Jana Beatrice")
 
 new_student = np.array([1.25,44,50000,9])
 prediction = new_student @ weights
@@ -137,7 +139,7 @@ if prediction >= 0.5:
 else:
     print("Scholarship Awarded: NO")
     
-print("\nQuito, James Andrey")
+print("\n Name: Quito, James Andrey")
 
 new_student = np.array([1.25,38,20000,7])
 prediction = new_student @ weights
@@ -151,7 +153,7 @@ if prediction >= 0.5:
 else:
     print("Scholarship Awarded: NO")
     
-print("\nBanayado, Denver")
+print("\n Name: Banayado, Denver")
 
 new_student = np.array([1.25,41,20000,3])
 prediction = new_student @ weights
@@ -165,7 +167,7 @@ if prediction >= 0.5:
 else:
     print("Scholarship Awarded: NO")
     
-print("\nGabaldon, Lance Gencedric")
+print("\n Name: Gabaldon, Lance Gencedric")
 
 new_student = np.array([1.25,12,60000,4])
 prediction = new_student @ weights
